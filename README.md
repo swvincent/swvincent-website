@@ -1,7 +1,24 @@
-# ScottWVincent.com
+# swvincent.com
 
-A resume website for me based on [Start Bootstrap - Resume](https://startbootstrap.com/theme/resume/)
+Personal landing page for [scottwvincent.com](https://scottwvincent.com).
 
-## Copyright and License
+## Stack
 
-Theme is Copyright 2013-2022 Start Bootstrap LLC. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE) license.
+- HTML + vanilla JavaScript
+- No build tools or dependencies
+
+## Structure
+
+```
+index.html        # Main page
+css/site.css      # Stylesheet
+images/           # Headshot and other assets
+favicon.ico       # Favicon
+favicon-16x16.png
+favicon-32x32.png
+apple-touch-icon.png
+```
+
+## Deployment
+
+Hosted on GitHub Pages. Pushing to `master` deploys automatically.
