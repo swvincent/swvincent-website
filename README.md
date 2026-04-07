@@ -1,6 +1,6 @@
 # swvincent.com
 
-Personal landing page for [scottwvincent.com](https://scottwvincent.com).
+Personal landing page for [swvincent.com](https://swvincent.com).
 
 ## Stack
 
