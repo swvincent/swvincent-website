@@ -1,6 +1,6 @@
 # Project
 
-Personal landing page for scottwvincent.com. HTML + vanilla JavaScript only — no frameworks, no build tools, no external dependencies.
+Personal landing page for www.swvincent.com. HTML + vanilla JavaScript only — no frameworks, no build tools, no external dependencies.
 
 ## Style
 
