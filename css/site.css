@@ -1,11 +1,30 @@
 :root {
+  color-scheme: light dark;
   --bg: #808080;
   --surface: #ffffff;
+  --surface-hover: #808080;
   --text-primary: #1a1a1a;
   --text-secondary: #555555;
   --border: #dedede;
+  --border-hover: #aaaaaa;
   --icon: #444444;
   --icon-hover: #000000;
+  --headshot-filter: grayscale(100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141414;
+    --surface: #1f1f1f;
+    --surface-hover: #2b2b2b;
+    --text-primary: #f0f0f0;
+    --text-secondary: #a8a8a8;
+    --border: #3d3d3d;
+    --border-hover: #5a5a5a;
+    --icon: #c8c8c8;
+    --icon-hover: #ffffff;
+    --headshot-filter: grayscale(100%) brightness(0.88);
+  }
 }
 
 *, *::before, *::after {
@@ -42,7 +61,7 @@ body {
   object-fit: cover;
   border: 3px solid var(--border);
   margin-bottom: 1.5rem;
-  filter: grayscale(100%);
+  filter: var(--headshot-filter);
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -99,8 +118,8 @@ h1 {
 
 .social-links a:hover {
   color: var(--icon-hover);
-  border-color: #aaaaaa;
-  background: var(--bg);
+  border-color: var(--border-hover);
+  background: var(--surface-hover);
 }
 
 .social-links svg {
