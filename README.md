@@ -1,16 +1,18 @@
 # swvincent.com
 
-Personal landing page for [swvincent.com](https://swvincent.com).
+Personal landing page for [www.swvincent.com](https://www.swvincent.com/).
 
 ## Stack
 
 - HTML + vanilla JavaScript
 - No build tools or dependencies
+- Light and dark themes via `prefers-color-scheme`
 
 ## Structure
 
 ```
 index.html        # Main page
+404.html          # Not found page
 css/site.css      # Stylesheet
 images/           # Headshot and other assets
 favicon.ico       # Favicon
