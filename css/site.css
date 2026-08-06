@@ -2,13 +2,14 @@
   color-scheme: light dark;
   --bg: #808080;
   --surface: #ffffff;
-  --surface-hover: #808080;
+  --surface-hover: #f4f4f4;
   --text-primary: #1a1a1a;
   --text-secondary: #555555;
   --border: #dedede;
   --border-hover: #aaaaaa;
   --icon: #444444;
   --icon-hover: #000000;
+  --focus-ring: #1a1a1a;
   --headshot-filter: grayscale(100%);
 }
 
@@ -23,6 +24,7 @@
     --border-hover: #5a5a5a;
     --icon: #c8c8c8;
     --icon-hover: #ffffff;
+    --focus-ring: #f0f0f0;
     --headshot-filter: grayscale(100%) brightness(0.88);
   }
 }
@@ -102,7 +104,8 @@ h1 {
   }
 }
 
-.social-links a {
+.social-links a,
+.home-link {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
@@ -116,10 +119,20 @@ h1 {
   transition: color 0.15s, border-color 0.15s, background 0.15s;
 }
 
-.social-links a:hover {
+.social-links a:hover,
+.home-link:hover {
   color: var(--icon-hover);
   border-color: var(--border-hover);
   background: var(--surface-hover);
+}
+
+.social-links a:focus-visible,
+.home-link:focus-visible {
+  color: var(--icon-hover);
+  border-color: var(--border-hover);
+  background: var(--surface-hover);
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
 }
 
 .social-links svg {
